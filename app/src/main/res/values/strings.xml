@@ -1,0 +1,85 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">CoupleConnect</string>
+    <string name="validation_message_field_not_empty">This field must not be left blank.</string>
+    <string name="title_home">Home</string>
+    <string name="title_moments">Your moments</string>
+    <string name="title_edit_moments">Add or edit Moment</string>
+    <string name="title_statistics">Statistics</string>
+    <string name="moment_type_romantic_date">Romantic date</string>
+    <string name="moment_type_cinema">Cinema</string>
+    <string name="moment_type_theater">Theater</string>
+    <string name="moment_type_travel">Travel</string>
+    <string name="moment_type_surprise_gift">Surprise</string>
+    <string name="moment_type_flowers">Bouquet of flowers</string>
+    <string name="moment_type_engagement">Engagement</string>
+    <string name="moment_type_wedding">Wedding</string>
+    <string name="moment_type_birthday">Birthday</string>
+    <string name="moment_type_anniversary">Anniversary</string>
+    <string name="moment_type_concert">Concert</string>
+    <string name="statistics_type_last_week">For the past week</string>
+    <string name="statistics_type_last_month">For the last month</string>
+    <string name="statistics_type_last_quarter">For the last quarter</string>
+    <string name="statistics_type_last_year">For the last year</string>
+    <string name="statistics_type_custom">Custom</string>
+    <!-- Welcome Screen -->
+    <string name="fragment_title_welcome">Welcome</string>
+    <string name="fragment_welcome_title" translatable="false">CoupleConnect</string>
+    <string name="fragment_welcome_slogan" translatable="false">Keeping your relationship on track, with CoupleConnect</string>
+    <string name="fragment_welcome_add_rel">Add relationships</string>
+    <string name="fragment_title_add_rel">Add Relationships</string>
+    <!-- Add relationships screen -->
+    <string name="fragment_add_rel_description">Before we can help you to avoid missing important moments in your relationship, please tell us a bit about yourself and your significant other.</string>
+    <string name="fragment_add_rel_owner_name">Your name</string>
+    <string name="fragment_add_rel_owner_name_placeholder">Enter Your name</string>
+    <string name="fragment_add_rel_partner_name">Your partner\'s name</string>
+    <string name="fragment_add_rel_partner_name_placeholder">Enter Your partner\'s name</string>
+    <string name="fragment_add_rel_relationships_start_date">The start date for your relationship</string>
+    <string name="fragment_add_rel_joint_photos">Upload some of your photos together</string>
+    <string name="fragment_add_rel_joint_photos_button">Upload</string>
+    <string name="fragment_add_rel_uploaded_joint_photos">Your photos</string>
+    <string name="fragment_add_rel_create_button">Create relationships</string>
+    <string name="fragment_add_rel_joint_photos_not_empty">You must upload at least one photo with your loved one</string>
+    <!-- Home screen -->
+    <string name="fragment_home_partner_names">%1$s and %2$s</string>
+    <string name="fragment_home_duration_label">You have been together for</string>
+    <string name="fragment_home_duration">%1$d year(s), %2$d month(s), %3$d week(s), %4$d days</string>
+    <string name="fragment_home_anniversary">There are %1$d day(s) left until your next anniversary(%2$s)</string>
+    <string name="fragment_home_joint_photos">These are your photos together</string>
+    <string name="fragment_home_settings">Additional information</string>
+    <string name="fragment_home_moments_button">Show moments</string>
+    <!-- Moments list screen -->
+    <string name="fragment_moments_list_description">Wanna take a trip down memory lane and relive some of the big moments in your life? Let\'s go!</string>
+    <string name="fragment_moments_list_add_button">+ Add moment</string>
+    <string name="fragment_moments_list_stats_button">Statistics</string>
+    <!-- Moment screen -->
+    <string name="fragment_moment_open_map_button">Show on map</string>
+    <string name="fragment_moment_address">Place:</string>
+    <string name="fragment_moment_note_empty">No words, just emotions..</string>
+    <!-- Edit Moment screen -->
+    <string name="fragment_edit_moment_slogan">Did something important happen in your couple\'s life? Let\'s save this moment!</string>
+    <string name="fragment_edit_moment_title">Come up with some memorable name for the moment</string>
+    <string name="fragment_edit_moment_title_placeholder">\"The most beautiful day of my life\"</string>
+    <string name="fragment_edit_moment_title_not_empty">Please come up with a name for this moment</string>
+    <string name="fragment_edit_moment_type">Select the category of event</string>
+    <string name="fragment_edit_moment_type_undefined">Chosen unknown type of moment</string>
+    <string name="fragment_edit_moment_timestamp">When did this happen?</string>
+    <string name="fragment_edit_moment_timestamp_undefined">Please put a label on the place where the event took place</string>
+    <string name="fragment_edit_moment_timestamp_previous">Previous geo tag</string>
+    <string name="fragment_edit_moment_coordinates">Mark the place where it happened</string>
+    <string name="fragment_edit_moment_coordinates_updated">The location has been updated</string>
+    <string name="fragment_edit_moment_create_button">+ Create Moment</string>
+    <string name="fragment_edit_moment_update_button">+ Update Moment</string>
+    <string name="fragment_edit_moment_note">Share your impressions</string>
+    <string name="fragment_edit_moment_note_placeholder">I really enjoyed spending time with my beloved</string>
+    <!-- Statistics screen -->
+    <string name="fragment_statistics_title">Statistics of your relationship</string>
+    <string name="fragment_statistics_slogan">Do you wonder how many times in a month you went out together? How many times have you visited the restaurant? Or maybe in a year? Then you are at the right place</string>
+    <string name="fragment_statistics_period">Select the period for which you want to collect statistics</string>
+    <string name="fragment_statistics_period_start">Select the left border of the date interval</string>
+    <string name="fragment_statistics_period_end">Select the right border of the date interval</string>
+    <string name="fragment_statistics_period_selected">The statistics include data from %1$s to %2$s</string>
+    <string name="fragment_statistics_period_undefined">You need to determine the date range for data collection</string>
+    <string name="fragment_statistics_period_error">The left border of the date interval cannot be larger than the right one</string>
+    <string name="fragment_statistics_start_button">Get results</string>
+</resources>

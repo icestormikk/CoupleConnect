@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_welcome">
+
+    <fragment
+        android:id="@+id/navigation_welcome"
+        android:name="com.icestormikk.coupleconnect.ui.welcome.WelcomeFragment"
+        android:label="@string/fragment_title_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_navigation_welcome_to_navigation_add_relationships"
+            app:destination="@id/navigation_add_relationships" />
+        <action
+            android:id="@+id/action_navigation_welcome_to_navigation_home"
+            app:destination="@id/navigation_home_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add_relationships"
+        android:name="com.icestormikk.coupleconnect.ui.addRelationships.AddRelationshipsFragment"
+        android:label="@string/fragment_title_add_rel"
+        tools:layout="@layout/fragment_add_relationships" >
+        <action
+            android:id="@+id/action_navigation_add_relationships_to_navigation_welcome"
+            app:destination="@id/navigation_welcome" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_home_fragment"
+        android:name="com.icestormikk.coupleconnect.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <argument
+            android:name="currentRelationshipsWithPhotos"
+            app:argType="com.icestormikk.coupleconnect.database.entities.relationships.RelationshipsWithPhotos" />
+        <action
+            android:id="@+id/action_navigation_home_to_momentsListFragment"
+            app:destination="@id/navigation_moments" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_moments"
+        android:name="com.icestormikk.coupleconnect.ui.moments.MomentsListFragment"
+        android:label="@string/title_moments"
+        tools:layout="@layout/fragment_moments_list" >
+        <argument android:name="currentRelationshipsWithMoments"
+            app:argType="com.icestormikk.coupleconnect.database.entities.relationships.RelationshipsWithMoments" />
+        <action
+            android:id="@+id/action_navigation_moments_to_momentFragment"
+            app:destination="@id/navigation_moment" />
+        <action
+            android:id="@+id/action_navigation_moments_to_addMomentFragment"
+            app:destination="@id/navigation_edit_moment" />
+        <action
+            android:id="@+id/action_navigation_moments_to_statisticsFragment"
+            app:destination="@id/navigation_statistics" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_moment"
+        android:name="com.icestormikk.coupleconnect.ui.moments.MomentFragment"
+        tools:layout="@layout/fragment_moment" >
+        <argument
+            android:name="currentMoment"
+            app:argType="com.icestormikk.coupleconnect.database.entities.moments.Moment" />
+        <action
+            android:id="@+id/action_navigation_moment_to_navigation_edit_moment"
+            app:destination="@id/navigation_edit_moment" />
+        <argument
+            android:name="currentRelationshipsWithMoments"
+            app:argType="com.icestormikk.coupleconnect.database.entities.relationships.RelationshipsWithMoments" />
+        <action
+            android:id="@+id/action_navigation_moment_to_navigation_moments"
+            app:destination="@id/navigation_moments" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_edit_moment"
+        android:name="com.icestormikk.coupleconnect.ui.moments.EditMomentFragment"
+        android:label="@string/title_edit_moments"
+        tools:layout="@layout/fragment_edit_moment" >
+        <action
+            android:id="@+id/action_editMomentFragment_to_navigation_moments"
+            app:destination="@id/navigation_moments" />
+        <argument
+            android:name="existingMoment"
+            app:argType="com.icestormikk.coupleconnect.database.entities.moments.Moment"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="currentRelationshipsWithMoments"
+            app:argType="com.icestormikk.coupleconnect.database.entities.relationships.RelationshipsWithMoments" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_statistics"
+        android:name="com.icestormikk.coupleconnect.ui.statistics.StatisticsFragment"
+        android:label="@string/title_statistics"
+        tools:layout="@layout/fragment_statistics" >
+        <argument
+            android:name="currentRelationships"
+            app:argType="com.icestormikk.coupleconnect.database.entities.relationships.Relationships" />
+    </fragment>
+</navigation>
